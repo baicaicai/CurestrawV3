@@ -3,15 +3,19 @@
 <navigator url="/pages/article/article">文章详情</navigator>
 <navigator url="/pages/casesAdd/casesAdd">增加病例</navigator>
 <navigator url="/pages/casesMy/casesMy">我的病例</navigator>
-<navigator url="/pages/home/home">首页</navigator>
+<view bindtap="homeClick">首页</view>
+<!--<navigator url="/pages/home/home">首页</navigator>-->
 <navigator url="/pages/medicineAsk/medicineAsk">药物咨询</navigator>
 <navigator url="/pages/medicineAsk2/medicineAsk2">药物咨询2</navigator>
 <navigator url="/pages/medicineDetail/medicineDetail">药物详情</navigator>
-<navigator url="/pages/medicineList/medicineList">药物列表</navigator>
+<view bindtap="medicineListClick">药物列表</view>
+<!--<navigator url="/pages/medicineList/medicineList">药物列表</navigator>-->
 <navigator url="/pages/medicineSearch/medicineSearch">药物搜索</navigator>
 <navigator url="/pages/medicineSearch2/medicineSearch2">药物结果</navigator>
 <navigator url="/pages/medicineSearch3/medicineSearch3">药物结果无</navigator>
-<navigator url="/pages/my/my">我的</navigator>
+<view bindtap="myClick">我的</view>
+<!--<navigator url="/pages/my/my">我的</navigator>-->
 <navigator url="/pages/myAccount/myAccount">我的账户</navigator>
 <navigator url="/pages/telVerification/telVerification">手机验证</navigator>
+<view bindtap="bindViewTap">日志</view>
 

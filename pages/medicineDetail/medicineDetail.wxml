@@ -113,7 +113,7 @@
     </view>
   </view> 
 
-   <navigator class='ask' url="/pages/medicineAsk/medicineAsk">
+   <navigator class='ask' url="/pages/medicineAsk2/medicineAsk2">
     <view class='left'>
       <view class='i1'>
         <view>
