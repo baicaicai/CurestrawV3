@@ -1,0 +1,26 @@
+0、LINK
+1、article               //文章
+2、aboutUs               //关于我们 
+3、telVerification       //手机验证
+4、home                  //首页
+5、casesAdd              //增添病例
+6、my                    //我的
+7、casesMy               //我的病例
+8、medicineList          //药物列表
+9、medicineAsk           //药物咨询
+10、medicineDetail       //药物详情
+11、medicineSearch       //药物搜索
+12、myAccount            //账户信息
+
+
+/* 类命名 */
+元素  item           图片    img   
+头    hd             
+身体  bd
+模块  module
+信息  info
+标题  title
+列表  list
+左    left
+中    middle
+右    right

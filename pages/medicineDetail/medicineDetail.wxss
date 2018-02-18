@@ -1,0 +1,338 @@
+/* pages/medicineDetai/medicineDetai.wxss */
+page{
+  background: #ebf2f1;
+  padding-bottom: 150rpx;
+}
+
+swiper{
+  height: 600rpx;
+  width: 100%;
+  z-index: 1;
+  position: relative;
+}
+swiper image{
+  width: 100%;
+}
+
+.name {
+  padding: 0 25rpx;
+  background: #fff;
+  padding-top: 35rpx;
+  border-radius: 20rpx 20rpx 0 0;
+  margin-top: -20rpx;
+  z-index: 9;
+  position: relative
+  
+}
+.name .i1{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15rpx;
+}
+.name .i1 text{
+  font-size: 36rpx;
+  font-weight: bold;
+}
+.name .i1 navigator{
+  width: 40rpx;
+  height: 40rpx;
+  background: #30c4b6;
+  border-radius: 50%;
+  box-shadow: 0px 8rpx 8rpx 0px rgba(48, 196, 182, 0.3);
+
+}
+.name .i1 navigator image {
+  width: 40rpx;
+  height: 40rpx;
+}
+.name .i2{
+  display: flex;
+  align-items: center;
+  height: 50rpx;
+}
+.name .i2 text{
+  font-size: 26rpx;
+  color: #666;
+}
+.name .i2 image {
+  width: 35rpx;
+  height: 35rpx;
+  margin-right: 10rpx;
+}
+
+.price {
+padding: 0 25rpx;
+background: #fff;
+}
+.price .item{
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1rpx dashed #e3e3e3;
+}
+.price .item:last-child{
+  border-bottom: none;
+}
+.price .item .left{
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+.price .item .left text{
+  font-size: 30rpx;
+}
+.price .item .right{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.price .item .right .i1{
+  font-size: 34rpx;
+  color: #e62929;
+  margin-bottom: 15rpx;
+}
+.price .item .right .i2{
+  font-size: 26rpx;
+  color: #888;
+}
+
+.info {
+  background: #fff;
+  padding:0 25rpx;
+  margin-top: 20rpx;
+
+}
+.info .i1{
+  display: flex;
+  padding: 25rpx 0;
+  border-bottom: 1rpx dashed #e3e3e3;
+} 
+.info .i1 text{
+  width: 50%;
+  font-size: 28rpx;
+}
+.info .i1 text:last-child{
+  padding-left: 25rpx;
+  border-left: 1rpx solid #e3e3e3;
+}
+.info .i2{
+  padding: 25rpx 0;
+}
+.info .i2 text{
+  font-size: 28rpx;
+}
+.info .i2 text.tip{
+    font-size: 24rpx;
+  color: #30c4b6;
+  border: 1rpx solid #30c4b6;
+  border-radius: 5rpx;
+  padding: 2rpx 5rpx;
+  margin-left: 10rpx;
+}
+
+
+
+
+.content{
+  background: #fff;
+  margin-top: 20rpx;
+  padding: 0 25rpx;
+  padding-bottom: 20rpx;
+}
+.content .box{
+  padding-bottom: 15rpx;
+}
+.content .box .i1{
+  font-size: 38rpx;
+  font-weight: bold;
+  display: block;
+  padding: 25rpx 0 15rpx 0;
+}
+.content .box .i2{
+  font-size: 28rpx;
+  display: block;
+  margin-bottom: 15rpx;
+}
+.content .box .i2:last-child{
+  margin-bottom: 0;
+}
+.content .box .i3{
+  font-size: 28rpx;
+  display: block;
+  position: relative;
+  padding-left: 20rpx;
+  line-height: 36rpx;
+  margin-bottom: 15rpx;
+}
+.content .box .i3:last-child{
+  margin-bottom: 0;
+}
+.content .box .i3::before{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  top: 14rpx;
+  left:0;
+  width: 8rpx;
+  height: 8rpx;
+  border-radius: 50%;
+  background: #000;
+}
+
+.other {
+  background: #fff;
+  margin-top: 20rpx;
+}
+.other .title {
+  display: flex;
+  align-items: center;
+  padding:25rpx ;
+  position: relative;
+}
+.other .title image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.other .title text{
+  flex: 1;
+  font-size: 30rpx;
+}
+.other .title navigator{
+  width: 40rpx;
+  height: 40rpx;
+  background: #30c4b6;
+  border-radius: 50%;
+  box-shadow: 0px 8rpx 8rpx 0px rgba(48, 196, 182, 0.3);
+}
+.other .title navigator image{
+  width: 40rpx;
+  height: 40rpx;
+}
+
+
+.list{
+  padding: 0 25rpx;
+}
+.list .item{
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #e3e3e3;
+}
+.list .item:last-child{
+  border-bottom: none;
+}
+.list .item .left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.list .item .left .i1{
+  font-size: 34rpx;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 15rpx;
+}
+.list .item .left .i2{
+  font-size: 26rpx;
+  color: #888888;
+  display: block;
+  padding-bottom: 35rpx;
+}
+.list .item .left .i3{
+  display: flex;
+  align-items: center;
+}
+.list .item .left .i3 image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.list .item .left .i3 text{
+  font-size: 26rpx;
+  width: 170rpx;
+  display: block;
+}
+.list .item .right{
+  width: 200rpx;
+  height: 160rpx;
+}
+.list .item .right image {
+  width: 100%;
+  height: 100%;
+}
+
+.ask {
+  background: #fff;
+  position: fixed;
+  height: 130rpx;
+  width: 100%;
+  display: flex;
+  bottom: 0;
+  align-items: center;
+}
+.ask .left{
+    flex: 1;
+    padding-left: 25rpx;
+}
+.ask .left .i1{
+  display: flex;
+  align-items: center;
+  height: 45rpx;
+  margin-bottom: 10rpx;
+}
+.ask .left .i1 view{
+  width: 75rpx;
+  text-align: center;
+  height: 45rpx;
+  margin-right: 35rpx;
+}
+.ask .left .i1 image{
+  width: 45rpx;
+  height: 45rpx;
+}
+.ask .left .i1 text{
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.ask .left .i1 .tip{
+  font-size: 24rpx;
+  font-weight: bold;
+  color: #30c43a;
+  border: 1rpx solid #30c43a;
+  border-radius: 5rpx;
+  padding: 5rpx 10rpx;
+  margin-left: 20rpx;
+}
+.ask .left .i2 {
+  font-size: 26rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  display: block;
+}
+.ask .left .i2 text{
+
+}
+.ask .left .i2 .guo {
+  width: 75rpx;
+  text-align: center;
+  display: inline-block;
+  margin-right: 35rpx;
+}
+.ask .right{
+  width: 30rpx;
+  height: 40rpx;
+  margin-right: 25rpx;
+}
+.ask .right image{
+  width: 30rpx;
+  height: 40rpx;
+}
+
+
+
+
+
+
+

@@ -1,0 +1,79 @@
+<!--pages/myAccount/myAccount.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>账户管理</text>
+  </view>
+
+  <view class='box'>
+    <view class='i1'>
+      <text class='o1'>头像</text>
+      <navigator class='o2'>
+        <image src='../../frame/icon-30.png'></image>
+      </navigator>
+      <image class='o3' src='../../frame/icon-22.png'></image>
+    </view>
+    
+    <view class='i2'>
+      <text class='o1'>昵称</text>
+      <input class='o2' value='胡志明'></input>
+    </view>
+
+    <view class='i4'>
+      <text class='o1'>性别</text>
+      <radio-group class="o2">
+        <label>
+          <radio color='#30c4b6'/>
+          <text>男</text>
+        </label>
+        <label>
+          <radio color='#30c4b6'/>
+          <text>女</text>
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='i3'>
+      <text class='o1'>生日</text>
+      <picker class='o2' mode="date" value="{{date}}" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+      <image class='o3' src='../../frame/icon-22.png'></image>
+    </view>
+
+    <view class='i2'>
+      <text class='o1'>手机号码</text>
+      <input class='o2' value='18812345678' type='number'></input>
+    </view>
+
+    <view class='i3'>
+      <text class='o1'>所在地区</text>
+      <picker class='o2' mode = "region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+        <view class="picker">
+          {{region[0]}} - {{region[1]}} - {{region[2]}}
+        </view>
+      </picker>
+      <image class='o3' src='../../frame/icon-22.png'></image>
+    </view>
+
+    <view class='i2'>
+      <text class='o1'>详细地址</text>
+      <textarea auto-height='auto' class='o2' value='河北省廊坊市固安县固安镇固安民小区20-2-1203室'></textarea>
+    </view>
+  </view>
+
+  <view class='tip'>
+    <text class='i1'>*</text>
+    <text class='i2'>我们理解隐私对于您的重要性，将会对您的信息进行严格保密</text>
+  </view>
+
+  <view class='btn'>
+    <button>保存</button>
+  </view>
+
+</view>

@@ -1,0 +1,300 @@
+/* pages/my/my.wxss */
+page{
+  background: #ebf2f1;
+}
+
+.hd{
+  background: #30c4b6;
+  padding-top: 90rpx;
+}
+.hd .box{
+  background: #fff;
+  position: relative;
+  border-radius: 20rpx 20rpx 0 0;
+  padding: 0 25rpx;
+  padding-top: 85rpx;
+}
+.hd .i1{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -45rpx;
+  margin: auto;
+}
+.hd .i1 image{
+  width: 100%;
+  height: 100%;
+}
+.hd .i2{
+  display: block;
+  font-size: 34rpx;
+  font-weight: bold;
+  text-align: center;
+
+}
+.hd .i3{
+  display: block;
+  text-align: center;
+  padding: 25rpx 0 35rpx 0;
+  border-bottom: 1rpx dashed #e3e3e3;
+}
+.hd .i3 navigator{
+  font-size: 28rpx;
+  color: #fff;
+  background: #35cbbd;
+  display: inline-block;
+  padding: 10rpx 20rpx;
+  border-radius: 5rpx;
+  box-shadow: 0px 8rpx 8rpx 0px rgba(48, 196, 182, 0.3);
+}
+.hd .wdz{
+  text-align: center;
+  padding: 25rpx 0;
+  padding-bottom: 35rpx;
+}
+.hd .wdz image{
+  width: 160rpx;
+  height: 150rpx;
+}
+.hd .wdz .o1{
+  color: #535e5c;
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 20rpx 0;
+  padding-top: 0;
+}
+.hd .wdz .o2{
+  color: #535e5c;
+  font-size: 26rpx;
+  line-height: 42rpx;
+  display: block;
+  padding: 0 50rpx;
+  text-align: left;
+}
+
+.bd{
+  margin-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.bd .title{
+  font-size: 36rpx;
+  font-weight: bold;
+  background: #fff;
+  display: block;
+  height: 120rpx;
+  padding: 0 25rpx;
+  line-height: 120rpx;
+}
+
+.plan {
+  padding: 0 25rpx;
+  margin-top: 20rpx;
+}
+.plan .i1{
+  font-size: 34rpx;
+  display: block;
+  padding: 25rpx 0;
+}
+
+.plan .i2{
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0px 5rpx 10rpx 0rpx rgba(235, 242, 241, 0.75);  
+  padding: 25rpx;
+}
+.plan .i2 .item{
+  padding-bottom: 30rpx;
+  position: relative;
+}
+.plan .i2 .item::after{
+  position: absolute;
+  content: '';
+  display: flex;
+  width: 4rpx;
+  height: 100%;
+  border-top: 10rpx solid #fff;
+  border-bottom: 15rpx solid #fff;
+  border-radius: 4rpx;
+  background: #eee;
+  top: 0;
+  bottom: 0;
+  left: 2rpx;
+  margin: auto;
+}
+.plan .i2 .item:last-child::after{
+  background: #fff;
+}
+.plan .i2 .item view{
+  font-size: 32rpx;
+  font-weight: bold;
+  height: 45rpx;
+  line-height: 45rpx;
+  margin-bottom: 10rpx;
+  padding-left: 45rpx;
+  position: relative;
+
+}
+.plan .i2 .item view::after{
+  position: absolute;
+  content: '';
+  width: 8rpx;
+  height: 20rpx;
+  border-top: 20rpx solid #fff;
+  border-bottom: 20rpx solid #fff;
+  border-radius: 4rpx;
+  background: #30c4b6;
+  top: 0;
+  bottom: 0;
+  left: 0rpx;
+  margin: auto;
+  z-index: 9;
+}
+.plan .i2 .item:first-child view::after{
+  background: #ff6600;
+}
+.plan .i2 .item text{
+  font-size: 30rpx;
+  display: block;
+  height: 45rpx;
+  line-height: 45rpx;
+  padding-left: 45rpx;
+}
+
+.doctor {
+  padding: 0 25rpx;
+  margin-top: 20rpx;
+}
+.doctor .i1{
+  font-size: 34rpx;
+  display: block;
+  padding: 25rpx 0;
+}
+
+.doctor .i2{
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0px 5rpx 10rpx 0rpx rgba(235, 242, 241, 0.75);  
+  padding: 25rpx;
+}
+.doctor .i2 .item {
+  display: flex;
+  align-items: center;
+  padding: 25rpx 0;
+}
+.doctor .i2 .item .left {
+  width: 190rpx;
+  position: relative;
+  height: 120rpx;
+}
+.doctor .i2 .item .left image {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  box-shadow: 0px 8rpx 8rpx 0px rgba(0, 120, 109, 0.15);
+}
+.doctor .i2 .item .left text{
+  width: 40rpx;
+  height: 40rpx;
+  position: absolute;
+  right: 50rpx;
+  top: 0rpx;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  font-size: 24rpx;
+  color: #fff;
+  font-weight: bold;
+  justify-content: center;
+}
+.doctor .i2 .item .middle {
+  flex: 1;
+}
+.doctor .i2 .item .middle image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.doctor .i2 .item .middle text{
+  font-size: 26rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  display: block;
+}
+.doctor .i2 .item .middle view {
+  display: flex;
+  align-items: center;
+  height: 40rpx;
+}
+.doctor .i2 .item .middle view text{
+  font-size: 26rpx;
+  font-weight: normal;
+  margin-bottom: 0rpx;
+}
+.doctor .i2 .item .right {
+  width: 30rpx;
+  height: 40rpx;
+}
+.doctor .i2 .item .right image{
+  width: 30rpx;
+  height: 40rpx;
+}
+
+.advice {
+  padding: 0 25rpx;
+  margin-top: 20rpx;
+}
+.advice .i1{
+  font-size: 34rpx;
+  display: block;
+  padding: 25rpx 0;
+}
+
+.advice .i2{
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0px 5rpx 10rpx 0rpx rgba(235, 242, 241, 0.75);  
+  padding: 25rpx;
+}
+.advice .i2 .shz{
+
+}
+.advice .i2 .shz{
+  text-align: center;
+  padding: 25rpx 0;
+  padding-bottom: 35rpx;
+}
+.advice .i2 .shz image{
+  width: 160rpx;
+  height: 150rpx;
+}
+.advice .i2 .shz .o1{
+  color: #535e5c;
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 20rpx 0;
+  padding-top: 0;
+}
+.advice .i2 .shz .o2{
+  color: #535e5c;
+  font-size: 26rpx;
+  line-height: 42rpx;
+  display: block;
+  padding: 0 50rpx;
+  text-align: center;
+}
+
+
+
+
+
+
+
+

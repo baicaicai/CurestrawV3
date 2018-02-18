@@ -1,0 +1,193 @@
+/* pages/casesAdd/casesAdd.wxss */
+page{
+  background: #ebf2f1;
+}
+
+.info{
+  background: #fff;
+  padding: 0 25rpx;
+}
+.info .i1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1rpx solid #e3e3e3;
+  padding: 9rpx 0;
+}
+.info .i1 .o1{
+  width: 150rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+.info .i1 .o2{
+  flex: 1;
+  text-align: right;
+  font-size: 30rpx;
+  padding: 20rpx 0;
+}
+
+
+.info .i4 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1rpx solid #e3e3e3;
+  padding: 10rpx 0;
+}
+.info .i4 .o1{
+  width: 150rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+.info .i4 .o2{
+  flex: 1;
+  text-align: right;
+  font-size: 30rpx;
+  padding: 16rpx 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.info .i4 .o2 label{
+  display: flex;
+  align-items: center;
+  width: 130rpx;
+  justify-content: flex-end;
+  margin-left: 30rpx;
+}
+.infobox .i4 .o2 label radio{
+  margin-right: 10rpx;
+}
+.info .i4 .o2 label text{
+  
+}
+
+.info .i2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 15rpx 0;
+  padding-right: 50rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+}
+.info .i2 .o1{
+  width: 150rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+.info .i2 .o2{
+  flex: 1;
+  text-align: right;
+  font-size: 30rpx;
+  height: 100%;
+  padding: 20rpx 0;
+}
+.info .i2 .o2 image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.info .i2 .o3{
+  width: 30rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}
+
+.box{
+  background: #fff;
+  margin-top: 20rpx;
+  padding:0 25rpx;
+  padding-bottom: 30rpx;
+  position: relative;
+  z-index: 9;
+}
+.box .i1{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 0;
+}
+.box .i1 text{
+  font-size: 34rpx;
+  font-weight: bold;
+}
+.box .i1 view{
+  font-size: 28rpx;
+  color: #888;
+}
+.box .i2{
+  width: 100%;
+}
+.box .i2 textarea{
+  background: #f5f8f8;
+  width: 100%;
+  padding: 25rpx;
+  box-sizing: border-box;
+  font-size: 30rpx;
+  line-height: 50rpx;
+  z-index: 9;
+}
+.box .i3 {
+
+}
+.box .i3 text{
+  font-size: 26rpx;
+  color: #888;
+  display: block;
+  padding: 40rpx 0 30rpx 0;
+}
+.box .i3 .picUpload{
+  display: flex
+}
+.box .i3 .picUpload button {
+  width: 150rpx;
+  height: 150rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  float: left;
+  margin: 0;
+}
+.box .i3 .picUpload button image{
+  width: 150rpx;
+  height: 150rpx;
+}
+
+.box .i3 .picUpload> image{
+  width: 150rpx;
+  height: 150rpx;
+  box-sizing: border-box;
+  border: 1rpx solid #e3e3e3;
+  float: left;
+  margin-right: 20rpx;
+}
+
+.btn{
+  display: flex;
+  background: #30c4b6;
+  height: 100rpx;
+  margin-top: 20rpx;
+  align-items: center;
+  justify-content: center;
+}
+.btn image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 10rpx;
+}
+.btn text{
+  font-size: 36rpx;
+  color: #fff;
+}
+
+
+
+
+

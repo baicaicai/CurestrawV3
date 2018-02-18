@@ -1,0 +1,152 @@
+<!--pages/medicineAsk/medicineAsk.wxml-->
+
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>用药咨询</text>
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode='widthFix'/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='info'>
+    <text class='i1'>服务信息</text>
+    <text class='i2'>患者提交病例及用药方案后:</text>
+    <view class='i3'>
+      <text>提交病例后我们的专业药师在1个小时内会响应您的需求</text>
+      <text>24小时内获得印度医生的诊断意见及正规医师处方</text>
+      <text>度医生帮患者将处方传至连锁药房进行审核</text>
+      <text>印度药房提供直邮服务，约10-15天送达患者手中</text>
+    </view>
+  </view>
+
+  <view class='process'>
+    <text class='i1'>服务流程</text>
+    <view class='list'>
+      <view class='item'>
+        <image src='../../frame/icon-8.png'></image>
+        <view></view>
+        <text>上传病例</text>
+      </view>
+      <view class='item'>
+        <image src='../../frame/icon-18.png'></image>
+        <view></view>
+        <text>医生开具处方</text>
+      </view>
+      <view class='item'>
+        <image src='../../frame/icon-19.png'></image>
+        <view></view>
+        <text>处方审核</text>
+      </view>
+      <view class='item'>
+        <image src='../../frame/icon-20.png'></image>
+        <view></view>
+        <text>上传处方至药房</text>
+      </view>
+    </view>
+
+
+  </view>
+
+  <view class='doctor'>
+    <text class='i1'>提供服务的医生</text>
+    <scroll-view scroll-x>
+      <view class='list'>
+        <view class='item'>
+          <view class='hd'>
+            <text style='background-image:url(../../frame/icon-33.png)'>6</text>
+            <image src='../../images/img-15.jpg'></image>
+          </view>
+          <view class='bd'>
+            <text class='o1'>MD Anderson Lucis</text>
+            <text class='o2'>Appollo Hospital</text>
+            <text class='o3'>肿瘤主任医生</text>
+          </view>
+          <button>详细</button>
+        </view>
+
+        <view class='item'>
+          <view class='hd'>
+            <text style='background-image:url(../../frame/icon-33.png)'>6</text>
+            <image src='../../images/img-15.jpg'></image>
+          </view>
+          <view class='bd'>
+            <text class='o1'>MD Anderson Lucis</text>
+            <text class='o2'>Appollo Hospital</text>
+            <text class='o3'>肿瘤主任医生</text>
+          </view>
+          <button>详细</button>
+        </view>
+
+        <view class='item'>
+          <view class='hd'>
+            <text style='background-image:url(../../frame/icon-33.png)'>6</text>
+            <image src='../../images/img-15.jpg'></image>
+          </view>
+          <view class='bd'>
+            <text class='o1'>MD Anderson Lucis</text>
+            <text class='o2'>Appollo Hospital</text>
+            <text class='o3'>肿瘤主任医生</text>
+          </view>
+          <button>详细</button>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <view class='question'>
+    <text class='i1'>常见问题</text>
+    <view class='item'>
+      <view class='i2'>
+        <image src='../../frame/icon-12.png'></image>
+        <text>获取处方后如何购药？</text>
+      </view>
+      <view class='i3'>
+        <image src='../../frame/icon-13.png'></image>
+        <text>医生开具印度处方后，患者可凭此处方自行于印度各正规药房进行购买，目前印度各大连锁药房基本都提供邮购服务，一般邮寄到中国的时效为10-15天</text>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='i2'>
+        <image src='../../frame/icon-12.png'></image>
+        <text>服务费用中是否包含药品费用？</text>
+      </view>
+      <view class='i3'>
+        <image src='../../frame/icon-13.png'></image>
+        <text>本服务为用药咨询服务，不提供药品销售！药品费用由药房收取，并负责物流相关事务。</text>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='i2'>
+        <image src='../../frame/icon-12.png'></image>
+        <text>如何确保医生资质和处方合法性？</text>
+      </view>
+      <view class='i3'>
+        <image src='../../frame/icon-13.png'></image>
+        <text>所有提供服务的医生都为印度正式注册医生，印度的法律允许医生远程问诊开具合法处方，所有处方皆有患者信息及医生签名，无法进行伪造</text>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='btn'>
+    <navigator class='i1'>
+      <image src='../../frame/icon-14.png'></image>
+      <text>在线咨询</text>
+    </navigator>
+     <view class="i2" bindtap="specialistScheme">
+      <image src='../../frame/icon-15.png'></image>
+      <text>获取用药指导及处方</text>
+    </view>
+  </view>
+
+</view>

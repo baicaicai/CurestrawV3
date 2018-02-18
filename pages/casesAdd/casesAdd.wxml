@@ -1,0 +1,93 @@
+<!--pages/casesAdd/casesAdd.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>添加病例</text>
+  </view>
+  <view class='info'>
+    <view class='i1'>
+      <text class='o1'>患者姓名</text>
+      <input class='o2' placeholder='请在此输入真实姓名'></input>
+    </view>
+
+    <view class='i4'>
+      <text class='o1'>性别</text>
+      <radio-group class="o2">
+        <label>
+          <radio color='#30c4b6'/>
+          <text>男</text>
+        </label>
+        <label>
+          <radio color='#30c4b6'/>
+          <text>女</text>
+        </label>
+      </radio-group>
+    </view>
+
+    <view class='i2'>
+      <text class='o1'>出生日期</text>
+      <picker class='o2' mode="date" value="{{date}}" bindchange="bindDateChange">
+        <view class="picker">
+          {{date}}
+        </view>
+      </picker>
+      <image class='o3' src='../../frame/icon-22.png'></image>
+    </view>
+
+    <view class='i2'>
+      <text class='o1'>疾病类型</text>
+      <picker class='o2' bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+        <view class="picker">
+          {{array1[index1]}}
+        </view>
+      </picker>
+      <image class='o3' src='../../frame/icon-22.png'></image>
+    </view>
+
+    <view class='i2'>
+      <text class='o1'>疾病阶段</text>
+      <picker class='o2' bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+        <view class="picker">
+          {{array2[index2]}}
+        </view>
+      </picker>
+      <image class='o3' src='../../frame/icon-22.png'></image>
+    </view>
+  </view>
+
+  <view class='box'>
+    <view class='i1'>
+      <text>描述</text>
+      <view>{{ taNum }}/200</view>
+    </view>
+    <view class='i2'>
+      <textarea placeholder='请填写医生建议或者病例的其他说明' bindinput='ta1' maxlength='200'></textarea>
+    </view>
+    <view class='i3'>
+      <text>上传病例、CT影像、病理检验报告及基因检测报告(如有)</text>
+      <view class='picUpload'>
+        <image wx:for="{{picBox}}" mode='aspectFill' src="{{ item }}" bindtap='picDel'></image>
+        <button bindtap='picUpload'><image src='../../frame/icon-40.png'></image></button>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='box'>
+    <view class='i1'>
+      <text>用药方案</text>
+    </view>
+    <view class='i2'>
+      <textarea placeholder='请填写国内医生建议的用药方案，请具体标明药品商品名，规格及数量;例如: 易瑞沙  规格: 250mg*30片  数量: 两瓶'></textarea>
+    </view>
+  </view>
+
+  <view class='btn'>
+    <image src='../../frame/icon-36.png'></image>
+    <text>获取用药建议</text>
+  </view>
+
+</view>

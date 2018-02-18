@@ -1,0 +1,51 @@
+<!--pages/aboutUs/aboutUs.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>关于我们</text>
+  </view>
+  <image class='img' mode='widthFix'  src='../../images/img-3.jpg'></image>
+
+  <text class='title'>全球易诊平台介绍</text>
+  <text class='content' style='margin-bottom:20rpx;'>海外医疗在国外发较为成，比如在欧美等医疗技术发达国家，很多医院都设有国际病人办公室并配备多语种医学专业翻译人员，就医流程和模式都已相对成熟。在国内，海外医疗虽然还属于新兴行业，但发展势头迅猛，发展潜力巨大，市场前景广阔。从中国经济发展水平和消费能力预测，未来10年时间，海外医疗市场及其相关产业的市场潜力，有可能超过数百亿美元</text>
+
+  <text class='title'>服务流程</text>
+  <image class='img' style='margin-bottom:20rpx;' mode='widthFix'  src='../../images/img-4.jpg'></image>
+
+  <text class='title'>部分机构列表</text>
+
+  <view class='list'>
+    <view class='item'>
+      <image src='../../images/img-5.jpg'></image>
+      <view>
+        <text class='i1'>新加坡亚历山大医院</text>
+        <text class='i2'>创建于:1982-08-16</text>
+        <text class='i3'>该医院是国际顶级肺癌治疗机构，目前肺癌治愈了达60%，亚历山大医院环...</text>
+      </view>
+    </view>
+
+    <view class='item'>
+      <image src='../../images/img-6.jpg'></image>
+      <view>
+        <text class='i1'>福建中心医院</text>
+        <text class='i2'>创建于:1982-08-16</text>
+        <text class='i3'>该医院是国际顶级肺癌治疗机构，目前肺癌治愈了达60%，亚历山大医院环...</text>
+      </view>
+    </view>
+
+    <view class='item'>
+      <image src='../../images/img-7.jpg'></image>
+      <view>
+        <text class='i1'>新加坡亚历山大医院</text>
+        <text class='i2'>创建于:1982-08-16</text>
+        <text class='i3'>该医院是国际顶级肺癌治疗机构，目前肺癌治愈了达60%，亚历山大医院环...</text>
+      </view>
+    </view>
+  </view>
+
+</view>
+
+

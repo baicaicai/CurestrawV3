@@ -1,0 +1,137 @@
+<!--pages/medicineDetai/medicineDetai.wxml-->
+
+<view class='page'>
+
+  <view class='fHead fHead2' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>药品详情</text>
+  </view>
+
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{product.imageUrl}}" class="slide-image"  mode='scaleToFill'/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view class='name'>
+    <view class='i1'>
+      <text>{{product.title}}</text>
+      <navigator><image src='../../frame/icon-16.png'></image></navigator>
+    </view>
+    <view class='i2'>
+      <image src='../../frame/icon-27.png'></image>
+      <text>商品名: {{product.cName}}</text>
+    </view>
+    <view class='i2'>
+      <image src='../../frame/icon-26.png'></image>
+      <text>化学名:  {{product.eName}}</text>
+    </view>
+  </view>
+
+  <view class='price'>
+    <view class='item'>
+      <view class='left'>
+        <text>{{product.packageSize1}}</text>
+      </view>
+      <view class='right'>
+        <text class='i1'>€{{product.price1}}</text>
+        <text class='i2'>人民币约{{product.price1}}{{product.currency}}</text>
+      </view>
+    </view>
+    <view class='item'>
+      <view class='left'>
+        <text>暂无</text>
+      </view>
+      <view class='right'>
+        <text class='i1'>€暂无</text>
+        <text class='i2'>人民币 暂无</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='info'>
+    <view class='i1'>
+      <text>产地: {{product.manufactor}}</text>
+      <text>销售地: {{product.origin}}</text>
+    </view>
+    <view class='i2'>
+      <text>生产厂家: {{product.manufactor}}</text>
+      <text class='tip'>原厂药品</text>
+    </view>
+  </view>
+
+  <view class='content'>
+    <view class='box'>
+      <text class='i1'>适应症</text>
+      <text class='i2'>适应证和用途:</text>
+      <text class='i2'>{{product.disease}}</text>
+    </view>
+    <view class='box'>
+      <text class='i1'>预期效果</text>
+      <text class='i2'>{{product.result}}</text>
+    </view>
+    <view class='box'>
+      <text class='i1'>副作用及禁忌</text>
+        <text class='i3'>{{product.desc}}</text>
+      <text class='i3'>高血压：用LENVIMA治疗前控制血压。对尽管优化高血压治疗的3级高血压不给LENVIMA。对危及生命高血压终止药物:</text>
+      <text class='i3'>心力衰竭：监视心脏代偿失调的临床症状和体征。对3级不给LENVIMA心功能不全。对4级心功能不全终止药物</text>
+      <text class='i3'>动脉血栓栓塞事件：一次动脉血栓栓塞事</text>
+      <text class='i3'>肝毒性：LENVIMA开始前和治疗自始至终定期地监视肝功能检验. 对3级或更大肝受损不给LENVIMA</text>
+    </view>
+  </view>
+
+  <view class='other'>
+    <view class='title'>
+      <image src='../../frame/icon-17.png'></image>
+      <text>其他国家或厂家生产的同化学名药品</text>
+      <navigator><image src='../../frame/icon-16.png'></image></navigator>
+    </view>
+    <view class='list'>
+      <navigator url="/pages/medicineDetail/medicineDetail?id={{item.objectId}}"  wx:for="{{productorther}}"> 
+      <view class='item'>
+        <view class='left'>
+          <text class='i1'>{{item.title}}</text>
+          <text class='i2'>{{item.origin}} {{item.packageSize1}}</text>
+          <view class='i3'>
+
+            <image src='../../frame/icon-6.png'></image>
+            <text>{{item.manufactor}}</text>
+            <image src='../../frame/icon-7.png'></image>
+            <text>{{item.price1}}{{item.currency}}</text>
+          </view>
+        </view>
+        <view class='right'>
+          <image src="{{item.thumbImageUrl}}" mode='scaleToFill'></image>
+        </view>
+      </view>
+</navigator>
+    </view>
+  </view> 
+
+   <navigator class='ask' url="/pages/medicineAsk/medicineAsk">
+    <view class='left'>
+      <view class='i1'>
+        <view>
+          <image src='../../frame/icon-28.png'></image>
+        </view>
+        <text>印度仿制药用药咨询</text>
+        <text class='tip'>免费</text>
+      </view>
+      <text class='i2'>
+          <text class='guo'>印度</text>
+          <text>12小时内响应，完整用药建议及正规药品处方</text>
+      </text>
+    </view>
+    <view class='right'>
+      <image src='../../frame/icon-22.png'></image>
+    </view>
+  </navigator>
+
+</view>
+
+

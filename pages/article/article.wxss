@@ -1,0 +1,42 @@
+/* pages/article/article.wxss */
+.title {
+  font-size: 46rpx;
+  font-weight: bold;
+  color: #000;
+  display: block;
+  text-align: center;
+  margin: 35rpx 25rpx 0 25rpx;
+}
+.info{
+  font-size: 28rpx;
+  color: #666666;
+  display: block;
+  text-align: center;
+  border-bottom: 1rpx solid #e3e3e3;
+  margin: 25rpx;
+  margin-bottom: 0;
+  padding-bottom: 25rpx;
+}
+.content{
+  padding: 35rpx 25rpx 0 25rpx;
+}
+.content image {
+  width: 100%;
+  margin-bottom: 30rpx;
+  border-radius: 10rpx;
+}
+.content text{
+  font-size: 30rpx;
+  line-height: 46rpx;
+  margin-bottom: 35rpx;
+  display: block;
+}
+
+
+
+
+
+
+
+
+

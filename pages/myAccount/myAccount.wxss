@@ -1,0 +1,172 @@
+/* pages/myAccount/myAccount.wxss */
+page{
+  background: #ebf2f1;
+}
+
+.box{
+  background: #fff;
+  padding: 0 25rpx;
+}
+.box .i1 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-right: 50rpx;
+  height: 180rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+  padding-right: 50rpx;
+}
+.box .i1 .o1{
+  width: 150rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+.box .i1 .o2{
+  flex: 1;
+  text-align: right;
+}
+.box .i1 .o2 image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.box .i1 .o3{
+  width: 30rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}
+
+.box .i2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1rpx solid #e3e3e3;
+  padding: 10rpx 0;
+}
+.box .i2 .o1{
+  width: 150rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+.box .i2 .o2{
+  flex: 1;
+  text-align: right;
+  font-size: 30rpx;
+  padding: 15rpx 0;
+}
+
+
+.box .i4 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1rpx solid #e3e3e3;
+  padding: 10rpx 0;
+}
+.box .i4 .o1{
+  width: 150rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+.box .i4 .o2{
+  flex: 1;
+  text-align: right;
+  font-size: 30rpx;
+  padding: 16rpx 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.box .i4 .o2 label{
+  display: flex;
+  align-items: center;
+  width: 130rpx;
+  justify-content: flex-end;
+  margin-left: 30rpx;
+}
+.box .i4 .o2 label radio{
+  margin-right: 10rpx;
+}
+.box .i4 .o2 label text{
+  
+}
+
+.box .i3 {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 10rpx 0;
+  padding-right: 50rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+}
+.box .i3 .o1{
+  width: 150rpx;
+  font-size: 34rpx;
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+.box .i3 .o2{
+  flex: 1;
+  text-align: right;
+  font-size: 30rpx;
+  height: 100%;
+  padding: 20rpx 0;
+}
+.box .i3 .o2 image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+.box .i3 .o3{
+  width: 30rpx;
+  height: 40rpx;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}
+
+.tip {
+  padding:20rpx 25rpx;
+  display: flex;
+  margin-bottom: 30rpx;
+}
+.tip .i1 {
+  font-size: 28rpx;
+  color: #f15c58;
+  line-height: 50rpx;
+  width: 30rpx;
+}
+.tip .i2 {
+  font-size: 28rpx;
+  color: #aab1b0;
+  line-height: 45rpx;
+}
+
+.btn {
+  padding: 0 75rpx;
+}
+.btn button{
+  font-size: 36rpx;
+  color: #fff;
+  background-color: #1fcebe;
+  box-shadow: 0px 14rpx 14rpx 0px rgba(48, 196, 182, 0.3);
+  border-radius: 5rpx;
+}
+.btn button::after{
+  border: none
+}
+
+
+
+
+
+
+

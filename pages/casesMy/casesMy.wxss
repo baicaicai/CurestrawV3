@@ -1,0 +1,69 @@
+/* pages/casesMy/casesMy.wxss */
+page{
+  background: #30c4b6;
+  padding-bottom: 25rpx;
+}
+
+.box{
+  background: #fff;
+  margin: 25rpx;
+  padding: 25rpx 30rpx;
+  border-radius: 10rpx;
+}
+.box .info {
+  border-bottom: 1rpx dashed #e3e3e3;
+  padding-bottom: 25rpx;
+}
+.box .i1{
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 20rpx 0;
+}
+.box .i1 .o1{
+  width: 150rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-right: 50rpx;
+}
+.box .i1 .o2{
+  flex: 1;
+  text-align: right;
+  font-size: 32rpx;
+}
+.dashed{
+  border-bottom: 1rpx dashed #e3e3e3; 
+}
+
+.box .i2{
+  border-bottom: 1rpx dashed #e3e3e3;
+  padding-bottom: 20rpx;
+}
+.box .i2:last-child{
+  border-bottom: none;
+}
+.box .i2 .o1{
+  display: block;
+  width: 150rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-right: 50rpx;
+  padding: 20rpx 0;
+}
+.box .i2 .o2{
+  font-size: 28rpx;
+  line-height: 40rpx;
+  margin-bottom: 25rpx;
+  display: block;
+}
+.box .i2 .o3{
+  display: flex;
+  margin-bottom: 25rpx;
+}
+.box .i2 .o3 image{
+  width: 145rpx;
+  height: 145rpx;
+  margin-right: 20rpx;
+}
+
+

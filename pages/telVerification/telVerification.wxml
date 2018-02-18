@@ -1,0 +1,30 @@
+<!--pages/telVerification/telVerification.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>手机验证</text>
+  </view>
+
+  <view class='hd'>
+    <image mode='scaleToFill' src='../../frame/icon-3.png'></image>
+    <text>手机验证</text>
+  </view>
+  <view class='bd'>
+    <view class='i1'>
+      <image mode='scaleToFill' src='../../frame/icon-1.png'></image>
+      <input placeholder='输入手机号码' type='number' value="{{userPhone}}" bindinput="userPhoneInput" id="userPhoneBindinput" ></input>
+        <view class="{{showSMBtn?'login-item':'login-item-hide'}}">
+                 <button bindtap="wechatLogin">发送验证码</button>
+        </view>
+    </view>
+    <view class='i2'>
+      <image mode='scaleToFill' src='../../frame/icon-2.png'></image>
+      <input placeholder='输入验证码' type='number' value="{{userPhoneCheck}}" bindinput="userPhoneCheckInput" id="userPhoneCheckBindinput"></input>
+    </view>
+    <button class='i3' bindtap="wechatPhoneCheck">下一步</button>
+  </view>
+
+</view>

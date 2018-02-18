@@ -1,0 +1,53 @@
+<!--pages/casesMy/casesMy.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>我的病历</text>
+  </view>
+
+  <view class='box'>
+    <view class='info'>
+      <view class='i1'>
+        <text class='o1'>患者姓名</text>
+        <text class='o2'>欧阳庆丰</text>
+      </view>
+      <view class='i1'>
+        <text class='o1'>性别</text>
+        <text class='o2'>男</text>
+      </view>
+      <view class='i1'>
+        <text class='o1'>出生日期</text>
+        <text class='o2'>1959-06-26</text>
+      </view>
+      <view class='i1'>
+        <text class='o1'>疾病类型</text>
+        <text class='o2'>癌症</text>
+      </view>
+      <view class='i1'>
+        <text class='o1'>疾病阶段</text>
+        <text class='o2'>IV</text>
+      </view>
+    </view>
+
+    <view class='i2'>
+      <text class='o1'>描述</text>
+      <text class='o2'>引起肺癌的原因总的来说分为内因和外因，内因包括慢性炎症、遗传易感基因；外因包括吸烟、大气污染房屋装修、厨房油烟等</text>
+      <view class='o3'>
+        <image mode="aspectFill" src='../../images/img-11.jpg'></image>
+        <image mode="aspectFill" src='../../images/img-12.jpg'></image>
+        <image mode="aspectFill" src='../../images/img-14.jpg'></image>
+      </view>
+    </view>
+
+
+    <view class='i2'>
+      <text class='o1'>用药方案</text>
+      <text class='o2'>益肺清化膏：口服。一次20克，一日3次。两个月为一疗程，或遵医嘱。 生血丸：口服。一次5g，一日3次；小儿酌减。如与其他药物同时使用可能会发生药物相互作用，详情其咨询医师或药师。</text>
+    </view>
+
+  </view>
+
+</view>

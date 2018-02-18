@@ -1,0 +1,62 @@
+/* pages/medicineSearch3/medicineSearch3.wxss */
+page{
+  background: #ebf2f1;
+}
+.fSearch{
+  background: #30c4b6;
+}
+
+.nothing{
+  text-align: center;
+  padding: 25rpx 0;
+  padding-bottom: 35rpx;
+  padding-top: 200rpx;
+}
+.nothing image{
+  width: 200rpx;
+  height: 150rpx;
+}
+.nothing .o1{
+  color: #535e5c;
+  font-size: 36rpx;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  padding: 20rpx 0;
+  padding-top: 0;
+}
+.nothing .o2{
+  color: #535e5c;
+  font-size: 26rpx;
+  line-height: 42rpx;
+  display: block;
+  padding: 0 90rpx;
+  text-align: center;
+}
+
+.zx{
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-bottom: 60rpx;
+}
+.zx text{
+  color: #535e5c;
+  font-size: 28rpx;
+  display: block;
+  text-align: center;
+  padding: 35rpx 0 55rpx 0;
+}
+.zx button{
+  font-size: 36rpx;
+  color: #fff;
+  background-color: #1fcebe;
+  box-shadow: 0px 14rpx 14rpx 0px rgba(48, 196, 182, 0.3);
+  border-radius: 5rpx;
+  width: 290rpx;
+}
+.zx button::after{
+    border: none
+}
+

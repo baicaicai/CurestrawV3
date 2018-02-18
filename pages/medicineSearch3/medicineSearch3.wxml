@@ -1,0 +1,30 @@
+<!--pages/medicineSearch3/medicineSearch3.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>搜索</text>
+  </view>
+
+  <view class='fSearch'>
+    <view>
+      <image src='../../frame/icon-4.png'></image>
+      <input placeholder='输入药品名称、查询价格及详细信息' value='{{ fSearch2 }}'  bindinput='fSearch1'></input>
+      <button id="{{fSearch1 ? 'fSearch1' : ''}}" bindtap='fSearch2'><image src='../../frame/icon-5.png'></image></button>
+    </view>
+  </view>
+
+  <view class='nothing'>
+        <image src='../../frame/icon-39.png'></image>
+        <text class='o1'>对不起，未找到相关药品信息</text>
+        <text class='o2'>请确认输入的药品名称正确，您可输入中文名、英文名、药品化学名重试</text>
+  </view>
+
+  <view class='zx'>
+    <text>如果还未找到，您可直接在线咨询我们药师！</text>
+    <button>在线咨询</button>
+  </view>
+
+</view>

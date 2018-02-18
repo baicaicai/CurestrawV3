@@ -1,0 +1,86 @@
+/* pages/telVerification/telVerification.wxss */
+.hd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 60rpx;
+  padding-bottom: 50rpx;
+}
+.hd image {
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 auto;
+  margin-bottom: 15rpx;
+}
+.hd text {
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #535e5c;
+}
+
+.bd{
+  padding: 0 75rpx;
+}
+.bd .i1{
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+  align-items: center
+}
+.bd .i1 input{
+  flex: 1;
+  font-size: 36rpx;
+}
+.bd .i1 image{
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 45rpx;
+}
+.bd .i1 button{
+  font-size: 28rpx;
+  color: #30c4b6;
+  background: none;
+  border: 0px;
+  display: inline-block;
+  padding: 0;
+}
+.bd .i1 button::after{
+  border: none;
+}
+.bd .i2{
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+  align-items: center
+}
+.bd .i2 image{
+  width: 70rpx;
+  height: 70rpx;
+  margin-right: 45rpx;
+}
+.bd .i2 input{
+  flex: 1;
+  font-size: 36rpx;
+}
+.bd .i3{
+  font-size: 36rpx;
+  color: #fff;
+  background-color: #1fcebe;
+  box-shadow: 0px 14rpx 14rpx 0px rgba(48, 196, 182, 0.3);
+  border-radius: 5rpx;
+}
+.bd .i3::after{
+  border: none;
+}
+
+.login-item{
+  display:block;
+}
+.login-item-hide{
+    display:none;
+}

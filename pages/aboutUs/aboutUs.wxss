@@ -1,0 +1,58 @@
+/* pages/aboutUs/aboutUs.wxss */
+.title{
+  font-size: 38rpx;
+  display: block;
+  padding: 30rpx 25rpx;
+  font-weight: bold;
+  padding-bottom: 15rpx;
+}
+.content{
+  font-size: 28rpx;
+  display: block;
+  padding: 0 25rpx;
+  line-height: 44rpx;
+}
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.list {
+  padding: 0 25rpx;
+  padding-bottom: 40rpx;
+}
+.list .item{
+  display: flex;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.list .item image{
+  width: 230rpx;
+  height: 170rpx;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+}
+.list .item view{
+  flex: 1;
+}
+.list .item .i1{
+  font-size: 34rpx;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5rpx;
+}
+.list .item .i2{
+  font-size: 28rpx;
+  display: block;
+  margin-bottom: 15rpx;
+}
+.list .item .i3{
+  font-size: 26rpx;
+  color: #666;
+  line-height: 36rpx;
+  display: block;
+}
+
+
+
+

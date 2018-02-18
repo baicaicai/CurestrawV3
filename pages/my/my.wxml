@@ -1,0 +1,109 @@
+<!--pages/my/my.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <text>我的</text>
+  </view>
+
+  <view class='hd'>
+    <view class='box'>
+      <view class='i1'>
+        <image src='../../frame/icon-30.png'></image>
+      </view>
+      <text class='i2'>胡志明</text>
+      <view class='i3'><navigator url="/pages/myAccount/myAccount">账户管理</navigator></view>
+      <view class='wdz'>
+        <image src='../../frame/icon-29.png'></image>
+        <text class='o1'>抱歉，您还没有定制医疗方案</text>
+        <text class='o2'>请完善您的个人病例，环球易诊富有经验的医疗团队将根据您的各人病历，遵循循证医学的理念，依托全球各国最新的临床指南，帮你你在全球范围内筛选最合适的医疗方案</text>
+      </view>
+    </view>
+  </view>
+
+  <view class='bd'>
+    <text class='title'>我的用药咨询</text>
+    <view class='plan'>
+      <text class='i1'>我的用药方案</text>
+      <view class='i2'>
+        <view class='item'>
+          <view>2018-01-12</view>
+          <text>非小细胞肺癌-IV期-男性-65岁</text>
+          <text>印度仿制药用药方案</text>
+        </view>
+        <view class='item'>
+          <view>2018-01-12</view>
+          <text>非小细胞肺癌-IV期-男性-65岁</text>
+          <text>印度仿制药用药方案</text>
+        </view>
+        <view class='item'>
+          <view>2018-01-12</view>
+          <text>非小细胞肺癌-IV期-男性-65岁</text>
+          <text>印度仿制药用药方案</text>
+        </view>
+
+      </view>
+    
+    </view>
+
+    <view class='doctor'>
+      <text class='i1'>提供服务的医生</text>
+      <view class='i2'>
+        <navigator class='item'>
+          <view class='left'>
+            <image src='../../frame/icon-30.png'></image>
+            <text style='background-image:url(../../frame/icon-33.png)'>6</text>
+          </view>
+          <view class='middle'>
+            <text>MD Anderson Lucis</text>
+            <view>
+              <image src='../../frame/icon-32.png'></image>
+              <text>Appollo Hospital</text>
+            </view>
+            <view>
+              <image src='../../frame/icon-31.png'></image>
+              <text>肿瘤主任医生</text>
+            </view>
+          </view>
+          <view class='right'>
+            <image src='../../frame/icon-22.png'></image>
+          </view>
+        </navigator>
+        <navigator class='item'>
+          <view class='left'>
+            <image src='../../frame/icon-30.png'></image>
+            <text style='background-image:url(../../frame/icon-33.png)'>6</text>
+          </view>
+          <view class='middle'>
+            <text>MD Anderson Lucis</text>
+            <view>
+              <image src='../../frame/icon-32.png'></image>
+              <text>Appollo Hospital</text>
+            </view>
+            <view>
+              <image src='../../frame/icon-31.png'></image>
+              <text>肿瘤主任医生</text>
+            </view>
+          </view>
+          <view class='right'>
+            <image src='../../frame/icon-22.png'></image>
+          </view>
+        </navigator>
+      </view>
+    </view>
+
+    <view class='advice'>
+      <text class='i1'>我的用药建议及处方</text>
+      <view class='i2'>
+        <view class='shz'>
+          <image src='../../frame/icon-34.png'></image>
+          <text class='o1'>处方正在审核中</text>
+          <text class='o2'>医生会在收到您提交病例的24小时内反馈</text> 
+        </view>
+      </view>
+    </view>
+
+
+
+  </view>
+
+</view>

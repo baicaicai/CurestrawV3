@@ -1,0 +1,53 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/Link/Link",
+    "pages/article/article",
+    "pages/aboutUs/aboutUs",
+    "pages/telVerification/telVerification",
+    "pages/home/home",
+    "pages/casesAdd/casesAdd",
+    "pages/casesMy/casesMy",
+    "pages/my/my",
+    "pages/myAccount/myAccount",
+    "pages/medicineList/medicineList",
+    "pages/medicineDetail/medicineDetail",
+    "pages/medicineAsk/medicineAsk",
+    "pages/medicineAsk2/medicineAsk2",
+    "pages/medicineSearch/medicineSearch",
+    "pages/medicineSearch2/medicineSearch2",
+    "pages/medicineSearch3/medicineSearch3"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#35cbbd",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white",
+    "navigationStyle":"custom"
+  },
+  "tabBar": {
+    "selectedColor": "#30c4b6",
+    "color":"#666666",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "frame/icon-23.png",
+        "selectedIconPath": "frame/icon-23_sel.png"
+      },
+      {
+        "pagePath": "pages/medicineList/medicineList",
+        "text": "药品信息",
+        "iconPath": "frame/icon-24.png",
+        "selectedIconPath": "frame/icon-24_sel.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "frame/icon-25.png",
+        "selectedIconPath": "frame/icon-25_sel.png"
+      }
+    ]
+  }
+}

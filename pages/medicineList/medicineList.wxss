@@ -1,0 +1,142 @@
+/* pages/medicineList/medicineList.wxss */
+page{
+  background: #ebf2f1;
+}
+.page{
+  padding-bottom: 20rpx;
+}
+
+.fSearch {
+  background: #30c4b6;
+}
+
+.filter{
+  position: relative;
+}
+.filter .hd{
+  display: flex;
+  height: 95rpx;
+  background: #fff;
+}
+.filter .hd >view{
+  width: 25%;
+  border-right: 1rpx solid #e3e3e3;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.filter .hd >view:last-child{
+  border-right: none;
+}
+.filter .hd >view text{
+  font-size: 28rpx;
+}
+.filter .hd >view image{
+  width: 35rpx;
+  height: 35rpx;
+  margin-left: 5rpx;
+}
+.filter .bd{
+  position: absolute;
+  width: 100%;
+  box-sizing: border-box;
+  top: 95rpx;
+  padding: 0 25rpx;
+  background: #f0f0f0;
+  border-bottom: 1rpx solid #e3e3e3;
+  border-top: 1rpx solid #e3e3e3;
+  display: none;
+}
+.filter .bd#active{
+  display: block;
+}
+.filter .bd view{
+  font-size: 28rpx;
+  height: 80rpx;
+  border-bottom: 1rpx solid #e3e3e3;
+  line-height: 80rpx;
+  position: relative;
+}
+.filter .bd view:last-child{
+  border-bottom:none;
+}
+.filter .bd view.active::after{
+  position: absolute;
+  background: #30c4b6;
+  content: "";
+  display: inline-block;
+  width: 20rpx;
+  height: 20rpx;
+  top: 0;
+  bottom: 0;
+  right: 0rpx;
+  margin: auto;
+  z-index: 2;
+  border-radius: 5rpx;
+}
+
+.list{
+  padding: 0 25rpx;
+  background: #fff;
+  margin-top: 20rpx;
+}
+.list .item{
+  display: flex;
+  align-items: center;
+  padding: 30rpx 0;
+  border-bottom: 1rpx solid #e3e3e3;
+}
+.list .item:last-child{
+  border-bottom: none;
+}
+.list .item .left{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.list .item .left .i1{
+  font-size: 34rpx;
+  font-weight: bold;
+  display: block;
+  padding-bottom: 15rpx;
+}
+.list .item .left .i2{
+  font-size: 26rpx;
+  color: #888888;
+  display: block;
+  padding-bottom: 35rpx;
+}
+.list .item .left .i3{
+  display: flex;
+  align-items: center;
+}
+.list .item .left .i3 image {
+  width: 30rpx;
+  height: 30rpx;
+  margin-right: 10rpx;
+}
+.list .item .left .i3 text{
+  font-size: 26rpx;
+  width: 170rpx;
+  display: block;
+}
+.list .item .right{
+  width: 200rpx;
+  height: 160rpx;
+}
+.list .item .right image {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+

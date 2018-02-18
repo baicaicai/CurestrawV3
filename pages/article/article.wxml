@@ -1,0 +1,21 @@
+<!--pages/article/article.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+  
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>合作机构</text>
+  </view>
+  <text class='title'>新加坡亚历山大医院</text>
+  <text class='info'>创建于1938年</text>
+  <view class='content'>
+    <image mode='widthFix' src='../../images/img-1.jpg'></image>
+    <text>新加坡亚历山大医院是一家拥有400余床位的综合医院，成立于1938年，最初是一家军事医院，1971年转为新加坡卫生署辖管，更名为亚历山大医院。医院的宗旨是要为病人提供全面而又便利的服务。</text>
+    <image mode='widthFix' src='../../images/img-2.jpg'></image>
+    <text>亚历山大医院环境优美，设备优良，医术高超，拥有1000多名员工，属下有一所终身保健中心、体重控制诊所，以及多间不同学科的专科诊所。该院在2005年获得国际医院评鉴联合会品质认证</text>
+  </view>
+
+</view>
+
+

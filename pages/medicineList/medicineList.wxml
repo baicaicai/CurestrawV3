@@ -1,0 +1,57 @@
+<!--pages/medicineList/medicineList.wxml-->
+<!--view class='fHead'>
+  <navigator></navigator>
+  <text>海外药品价格信息</text>
+</view-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>药品列表</text>
+  </view>
+
+  <view class='fSearch'>
+    <view>
+      <image src='../../frame/icon-4.png'></image>
+      <input placeholder='输入药品名称、查询价格及详细信息' value='{{ fSearch2 }}'  bindinput='fSearch1'></input>
+      <button id="{{fSearch1 ? 'fSearch1' : ''}}" bindtap='fSearch2'><image src='../../frame/icon-5.png'></image></button>
+    </view>
+  </view>
+
+  <view class='filter'>
+    <view class='hd'>
+      <view bindtap="ifun1" wx:for="{{filter}}" data-navitem="{{ index }}" id="{{currentNavItem == index ? 'active2' : ''}}">
+        <text>{{item.name}}</text>
+        <image src='../../frame/icon-35.png'></image>
+      </view>
+    </view>
+    <view class='bd' wx:for="{{filter}}" data-navitem="{{ index }}" id="{{currentNavItem == index ? 'active' : ''}}" >
+      <view wx:for="{{item.list}}" bindtap="ifun2">{{ item }}</view>
+    </view>
+  </view>
+
+  <view class='list'>
+      <navigator url="/pages/medicineDetail/medicineDetail?id={{item.objectId}}"  wx:for="{{products}}"> 
+      <view class='item'>
+        <view class='left'>
+          <text class='i1'>{{item.title}}</text>
+          <text class='i2'>{{item.origin}} {{item.packageSize1}}</text>
+          <view class='i3'>
+
+            <image src='../../frame/icon-6.png'></image>
+            <text>{{item.manufactor}}</text>
+            <image src='../../frame/icon-7.png'></image>
+            <text>{{item.price1}}{{item.currency}}</text>
+          </view>
+        </view>
+        <view class='right'>
+          <image src="{{item.thumbImageUrl}}" mode='scaleToFill'></image>
+        </view>
+      </view>
+</navigator>
+
+  </view>
+
+</view>

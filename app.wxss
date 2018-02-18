@@ -1,0 +1,108 @@
+/**app.wxss**/
+image{
+  font-size: 0;
+  border: none;
+}
+button{
+  border: none;
+  background: none;
+}
+button::after{
+  border: none;
+}
+
+.page{
+  -webkit-overflow-scrolling : touch;
+
+}
+/* 头部 */
+.fHead{
+  height: 44px;
+  background: #30c4b6;
+  position: fixed;
+  top: 0;
+  z-index: 9999999;
+  width: 100%;
+}
+.fHead text {
+  font-size: 18px;
+  color: #fff;
+  font-weight: bold;
+  width: 300rpx;
+  height: 44px;
+  line-height: 44px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+.fHead navigator{
+  height: 44px;
+  position: absolute;
+  bottom: 0;
+  width: 100rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 25rpx;
+}
+.fHead navigator image{
+  width: 30rpx;
+  height: 40rpx;
+}
+.fHead2{
+  background: -webkit-linear-gradient( top,rgba(0, 0, 0, .8),rgba(0, 0, 0, 0));
+  background-size: cover;
+  background-position: top;
+}
+
+
+
+/* 搜索 */
+.fSearch{
+  padding: 25rpx;
+  background: #fff;
+}
+.fSearch >view{
+  height: 70rpx;
+  background: #f4f7f7;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.fSearch >view input{
+  flex: 1;
+  font-size: 28rpx;
+}
+.fSearch >view image{
+  width: 45rpx;
+  height: 45rpx;
+  margin: 0 10rpx;
+}
+.fSearch >view button{
+  width: 70rpx;
+  height: 70rpx;
+  padding: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+}
+.fSearch >view button#fSearch1 {
+  display: flex;
+}
+.fSearch >view button::after{
+  border: none;
+}
+.fSearch >view button image{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+
+
+
+

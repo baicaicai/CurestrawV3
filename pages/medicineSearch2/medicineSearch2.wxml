@@ -1,0 +1,44 @@
+<!--pages/medicineSearch2/medicineSearch2.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>搜索</text>
+  </view>
+
+  <view class='fSearch'>
+    <view>
+      <image src='../../frame/icon-4.png'></image>
+      <input placeholder='输入药品名称、查询价格及详细信息' value='{{ fSearch2 }}'  bindinput='fSearch1'></input>
+      <button id="{{fSearch1 ? 'fSearch1' : ''}}" bindtap='fSearch2'><image src='../../frame/icon-5.png'></image></button>
+    </view>
+  </view>
+
+  <view class='bar'>
+  以下为搜索结果
+  </view>
+
+  <view class='list'>
+   <navigator url="/pages/medicineDetail/medicineDetail?id={{item.objectId}}"  wx:for="{{products}}"> 
+      <view class='item'>
+        <view class='left'>
+          <text class='i1'>{{item.title}}</text>
+          <text class='i2'>{{item.origin}} {{item.packageSize1}}</text>
+          <view class='i3'>
+
+            <image src='../../frame/icon-6.png'></image>
+            <text>{{item.manufactor}}</text>
+            <image src='../../frame/icon-7.png'></image>
+            <text>{{item.price1}}{{item.currency}}</text>
+          </view>
+        </view>
+        <view class='right'>
+          <image src="{{item.thumbImageUrl}}" mode='scaleToFill'></image>
+        </view>
+      </view>
+</navigator>
+  </view>
+
+</view>

@@ -1,0 +1,75 @@
+<!--pages/home/home.wxml-->
+<view class='page'>
+
+  <view class='fHead fHead2' style="padding-top:{{ztlH}}px;">
+    <text>首页</text>
+  </view>
+  <swiper indicator-dots="{{indicatorDots}}"
+    autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+    <block wx:for="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode='widthFix'/>
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <view>
+    <navigator class='ask' url="/pages/medicineAsk2/medicineAsk2">
+      <view class='left'>
+        <view class='i1'>
+          <view>
+            <image src='../../frame/icon-28.png'></image>
+          </view>
+          <text>印度仿制药用药咨询</text>
+          <text class='tip'>¥99</text>
+        </view>
+        <text class='i2'>
+            <text class='guo'>印度</text>
+            <text>12小时内响应，完整用药建议及正规药品处方</text>
+        </text>
+      </view>
+      <view class='right'>
+        <image src='../../frame/icon-22.png'></image>
+      </view>
+    </navigator>
+
+    <view class='fSearch'>
+      <view>
+        <image src='../../frame/icon-4.png'></image>
+        <input placeholder='输入药品名称、查询价格及详细信息' value='{{ fSearch2 }}'  bindinput='fSearch1'></input>
+        <button id="{{fSearch1 ? 'fSearch1' : ''}}" bindtap='fSearch2'><image src='../../frame/icon-5.png'></image></button>
+      </view>
+    </view>
+
+    <view class='more'>
+      <image src='../../frame/icon-21.png' class='i1'></image>
+      <text class='i2'>海外药品价格信息</text>
+      <navigator class='i3' url="/pages/medicineSearch2/medicineSearch2">
+        <text>更多</text>
+        <image src='../../frame/icon-22.png'></image>
+      </navigator>
+    </view>
+    <view class='list'>
+     <navigator url="/pages/medicineDetail/medicineDetail?id={{item.objectId}}"  wx:for="{{products}}"> 
+      <view class='item'>
+        <view class='left'>
+          <text class='i1'>{{item.title}}</text>
+          <text class='i2'>{{item.origin}} {{item.packageSize1}}</text>
+          <view class='i3'>
+
+            <image src='../../frame/icon-6.png'></image>
+            <text>{{item.manufactor}}</text>
+            <image src='../../frame/icon-7.png'></image>
+            <text>{{item.price1}}{{item.currency}}</text>
+          </view>
+        </view>
+        <view class='right'>
+          <image src="{{item.thumbImageUrl}}" mode='scaleToFill'></image>
+        </view>
+      </view>
+</navigator>
+
+    </view>
+  </view>
+
+</view>

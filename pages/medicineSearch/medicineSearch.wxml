@@ -1,0 +1,35 @@
+<!--pages/medicineSearch/medicineSearch.wxml-->
+<view class='page' style="padding-top:{{ztlH2}}px">
+
+  <view class='fHead' style="padding-top:{{ztlH}}px">
+    <navigator open-type="navigateBack">
+      <image src='../../frame/icon-37.png'></image>
+    </navigator>
+    <text>搜索</text>
+  </view>
+
+    <view class='fSearch'>
+      <view>
+        <image src='../../frame/icon-4.png'></image>
+        <input placeholder='输入药品名称、查询价格及详细信息' value='{{ fSearch2 }}'  bindinput='fSearch1'></input>
+        <button id="{{fSearch1 ? 'fSearch1' : ''}}" bindtap='fSearch2'><image src='../../frame/icon-5.png'></image></button>
+      </view>
+    </view>
+
+  <view class='history'>
+    <text>常见搜索</text>
+    <view class='box'>
+      <navigator class='tip'>胶囊</navigator>
+      <navigator class='tip'>盐酸氟米松软膏</navigator>
+      <navigator class='tip'>Lastre</navigator>
+      <navigator class='tip'>多吉美</navigator>
+      <navigator class='tip'>纳武单抗</navigator>
+      <navigator class='tip'>奥美拉唑胶囊</navigator>
+      <navigator class='tip'>Keytruda</navigator>
+      <navigator class='tip'>氟哌酸</navigator>
+      <navigator class='tip'>四环素</navigator>
+    </view>
+  </view>
+
+</view>
+
