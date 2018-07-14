@@ -32,15 +32,13 @@
         <image src='../../frame/icon-22.png'></image>
       </view>
     </navigator>
-
     <view class='fSearch'>
       <view>
         <image src='../../frame/icon-4.png'></image>
-        <input placeholder='输入药品名称、查询价格及详细信息' value='{{ fSearch2 }}'  bindinput='fSearch1'></input>
+        <input placeholder='输入药品名称、查询价格及详细信息' value='{{ fSearch2 }}'  bindinput='fSearch1' bindconfirm="userSubmitInput"></input>
         <button id="{{fSearch1 ? 'fSearch1' : ''}}" bindtap='fSearch2'><image src='../../frame/icon-5.png'></image></button>
       </view>
     </view>
-
     <view class='more'>
       <image src='../../frame/icon-21.png' class='i1'></image>
       <text class='i2'>海外药品价格信息</text>

@@ -139,10 +139,10 @@
   </view>
 
   <view class='btn'>
-    <navigator class='i1'>
+    <button class='i1'  open-type="contact">
       <image src='../../frame/icon-14.png'></image>
-      <text>在线咨询</text>
-    </navigator>
+         <text>在线咨询</text>
+    </button>
      <view class="i2" bindtap="specialistScheme">
       <image src='../../frame/icon-15.png'></image>
       <text>获取用药指导及处方</text>

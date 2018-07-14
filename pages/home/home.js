@@ -29,7 +29,8 @@ Page({
       i = true;
     }
     this.setData({
-      fSearch1: i
+      fSearch1: i,
+      fSearch2: e.detail.value
     });
   },
   fSearch2: function (e) {
@@ -51,7 +52,7 @@ Page({
   onReady: function () {
     var that=this;
     var query=new AV.Query('Products');
-    query.descending('createdAt');
+    query.ascending('showOrder');
     query.limit(2)// 返回 2 条数据
    // query.skip = 2
     query.find().then(function (products)
@@ -102,5 +103,22 @@ Page({
    */
   onShareAppMessage: function () {
   
-  }
+  },
+  userSubmitInput: function (){
+    /*wx.showToast({
+      title: this.data.selectText,
+      icon: 'loading',
+      duration: 2000
+    }) */
+    wx.navigateTo({
+
+      url: '/pages/medicineSearch2/medicineSearch2?selectText=' + this.data.fSearch2,
+
+      success: function (res) {
+      },
+
+      fail: function () {
+      },
+    })
+  },
 })

@@ -43,15 +43,6 @@
         <text class='i2'>人民币约{{product.price1}}{{product.currency}}</text>
       </view>
     </view>
-    <view class='item'>
-      <view class='left'>
-        <text>暂无</text>
-      </view>
-      <view class='right'>
-        <text class='i1'>€暂无</text>
-        <text class='i2'>人民币 暂无</text>
-      </view>
-    </view>
   </view>
 
   <view class='info'>
@@ -67,21 +58,16 @@
 
   <view class='content'>
     <view class='box'>
-      <text class='i1'>适应症</text>
-      <text class='i2'>适应证和用途:</text>
+      <text class='i1'>药品简介</text>
+      <text class='i2'>{{product.desc}}</text>
+    </view>
+    <view class='box'>
+      <text class='i1'>适用症</text>
       <text class='i2'>{{product.disease}}</text>
     </view>
     <view class='box'>
-      <text class='i1'>预期效果</text>
-      <text class='i2'>{{product.result}}</text>
-    </view>
-    <view class='box'>
-      <text class='i1'>副作用及禁忌</text>
-        <text class='i3'>{{product.desc}}</text>
-      <text class='i3'>高血压：用LENVIMA治疗前控制血压。对尽管优化高血压治疗的3级高血压不给LENVIMA。对危及生命高血压终止药物:</text>
-      <text class='i3'>心力衰竭：监视心脏代偿失调的临床症状和体征。对3级不给LENVIMA心功能不全。对4级心功能不全终止药物</text>
-      <text class='i3'>动脉血栓栓塞事件：一次动脉血栓栓塞事</text>
-      <text class='i3'>肝毒性：LENVIMA开始前和治疗自始至终定期地监视肝功能检验. 对3级或更大肝受损不给LENVIMA</text>
+      <text class='i1'>用量用法</text>
+        <text class='i3'>{{product.usage}}</text>
     </view>
   </view>
 
@@ -114,6 +100,7 @@
   </view> 
 
    <navigator class='ask' url="/pages/medicineAsk2/medicineAsk2">
+
     <view class='left'>
       <view class='i1'>
         <view>

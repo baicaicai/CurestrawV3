@@ -11,7 +11,7 @@
     <view class='fSearch'>
       <view>
         <image src='../../frame/icon-4.png'></image>
-        <input placeholder='输入药品名称、查询价格及详细信息' value='{{ fSearch2 }}'  bindinput='fSearch1'></input>
+        <input placeholder='输入药品名称、查询价格及详细信息' value='{{ fSearch2 }}'  bindinput='fSearch1'  bindconfirm="userSubmitInput"></input>
         <button id="{{fSearch1 ? 'fSearch1' : ''}}" bindtap='fSearch2'><image src='../../frame/icon-5.png'></image></button>
       </view>
     </view>
@@ -30,6 +30,15 @@
       <navigator class='tip'>四环素</navigator>
     </view>
   </view>
+  <view class="{{fnoSeatch ? 'nothing' : 'hide'}}">
+        <image src='../../frame/icon-39.png'></image>
+        <text class='o1'>对不起，未找到相关药品信息</text>
+        <text class='o2'>请确认输入的药品名称正确，您可输入中文名、英文名、药品化学名重试</text>
+  </view>
 
+  <view class="{{fnoSeatch ? 'zx' : 'hide'}}">
+    <text>如果还未找到，您可直接在线咨询我们药师！</text>
+    <button  open-type="contact">在线咨询</button>
+  </view>
 </view>
 

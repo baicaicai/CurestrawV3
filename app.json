@@ -41,12 +41,6 @@
         "text": "药品信息",
         "iconPath": "frame/icon-24.png",
         "selectedIconPath": "frame/icon-24_sel.png"
-      },
-      {
-        "pagePath": "pages/my/my",
-        "text": "我的",
-        "iconPath": "frame/icon-25.png",
-        "selectedIconPath": "frame/icon-25_sel.png"
       }
     ]
   }
