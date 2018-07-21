@@ -137,6 +137,11 @@ Page({
     var query = new AV.Query('Products');
     var cql = "select * from Products where title like '%" + this.data.fSearch2 + "%' or cName like '%" + this.data.fSearch2 + "%' or eName like '%" + this.data.fSearch2 + "%' order by showOrder limit " + this.data.numberCount + ",5";
     console.log("查询记录条数的【cql】：" + cql);
+    wx.showToast({
+      title: '努力加载中',
+      icon: 'loading',
+      duration: 5000
+    });
     AV.Query.doCloudQuery(cql).then(function (data) {
       //console.log(data);
       //var bean = new Page();
@@ -148,11 +153,6 @@ Page({
         that.setData({ products });
       }
       else {
-        wx.showToast({
-          title: '努力加载中',
-          icon: 'loading',
-          duration: 2000
-        });
         //追加
         that.data.numberCount += products.length;
         var old_list = that.data.products;
@@ -163,7 +163,10 @@ Page({
           products: that.data.products
         });
         //wx.hideToast();
-      }
+      };
+      setTimeout(function () {
+        wx.hideToast();
+      }, 700);
     }, function (error) {
       console.log(error);
     });

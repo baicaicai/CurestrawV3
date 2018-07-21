@@ -20,11 +20,11 @@
           <view>
             <image src='../../frame/icon-28.png'></image>
           </view>
-          <text>印度仿制药用药咨询</text>
-          <text class='tip'>¥99</text>
+          <text>仿制药用药咨询</text>
+          <text class='tip'>免费</text>
         </view>
         <text class='i2'>
-            <text class='guo'>印度</text>
+            <text class='guo'>海外</text>
             <text>12小时内响应，完整用药建议及正规药品处方</text>
         </text>
       </view>
@@ -42,7 +42,7 @@
     <view class='more'>
       <image src='../../frame/icon-21.png' class='i1'></image>
       <text class='i2'>海外药品价格信息</text>
-      <navigator class='i3' url="/pages/medicineSearch2/medicineSearch2">
+      <navigator class='i3' url="/pages/medicineSearch/medicineSearch">
         <text>更多</text>
         <image src='../../frame/icon-22.png'></image>
       </navigator>

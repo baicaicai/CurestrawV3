@@ -1,6 +1,6 @@
 <!--pages/medicineDetai/medicineDetai.wxml-->
 
-<view class='page'>
+<view class='page'style="padding-top:{{ztlH2}}px">
 
   <view class='fHead fHead2' style="padding-top:{{ztlH}}px">
     <navigator open-type="navigateBack">
@@ -106,11 +106,11 @@
         <view>
           <image src='../../frame/icon-28.png'></image>
         </view>
-        <text>印度仿制药用药咨询</text>
+        <text>仿制药用药咨询</text>
         <text class='tip'>免费</text>
       </view>
       <text class='i2'>
-          <text class='guo'>印度</text>
+          <text class='guo'>海外</text>
           <text>12小时内响应，完整用药建议及正规药品处方</text>
       </text>
     </view>

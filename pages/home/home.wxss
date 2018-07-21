@@ -143,16 +143,14 @@ swiper image{
   font-weight: bold;
 }
 .ask .left .i1 .tip{
-  font-size: 34rpx;
-  font-weight: bold;
-  color: #eb2936;
-  margin-left: 20rpx;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  margin: auto;
+ font-size: 24rpx;
+  color: #30c4b6;
+  border: 1rpx solid #30c4b6;
+  border-radius: 5rpx;
+  padding: 2rpx 5rpx;
+  margin-left: 10rpx;
 }
+
 .ask .left .i2 {
   font-size: 26rpx;
   height: 40rpx;

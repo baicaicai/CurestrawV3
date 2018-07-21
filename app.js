@@ -2,7 +2,7 @@
 
 //var config = require('./config');
 
-var isTest=false;
+var isTest = false;
 
 App({
   onLaunch: function () {
@@ -13,12 +13,13 @@ App({
       appId: '5E1AAuPh4XpujiDnxGNKo8t3-gzGzoHsz',
       appKey: 'TohXj4W2SNACyItgiwkAHTHg',
     });
+    this.getSysInfo(this);
 
     // 展示本地存储能力
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
     wx.setStorageSync('logs', logs)
-    
+
     if (!isTest) {
       if (this.globalData.user == null) {
         AV.User.loginWithWeapp().then(user => {
@@ -36,11 +37,11 @@ App({
         if (res.authSetting['scope.userInfo']) {
           // 已经授权，可以直接调用 getUserInfo 获取头像昵称，不会弹框
           wx.getUserInfo({
-              success: function (res) {
-                that.getSysInfo(that);
-                that.checkUserInfo(res.userInfo, that);
-              }, fail: function () {
-                console.log("获取UserInfo失败！");
+            success: function (res) {
+             // that.getSysInfo(that);
+              that.checkUserInfo(res.userInfo, that);
+            }, fail: function () {
+              console.log("获取UserInfo失败！");
             }
           })
         }
@@ -56,7 +57,7 @@ App({
                   if (res.authSetting["scope.userInfo"]) {////如果用户重新同意了授权登录
                     wx.getUserInfo({
                       success: function (res) {
-                        that.getSysInfo(that);
+                       // that.getSysInfo(that);
                         that.checkUserInfo(res.userInfo, that);
                       }
                     })
@@ -84,7 +85,7 @@ App({
     })
   },
 
-  checkUserInfo: function (userInfo,that) {
+  checkUserInfo: function (userInfo, that) {
     var AV = this.globalData.AV;
     var query = new AV.Query('user_Info');
     query.equalTo('user_id', AV.User.current().id);
@@ -146,16 +147,16 @@ App({
 
   loginByPhone: function () {
     if (this.globalData.user == null || !this.globalData.user.mobilePhoneVerified) {
-     // wx.navigateTo({ url: '/pages/userinfo/userinfo?userPhone=' })
+      // wx.navigateTo({ url: '/pages/userinfo/userinfo?userPhone=' })
     }
     else {
-    //  wx.navigateTo({ url: '/pages/userinfo/userinfo?userPhone=' + this.data.userPhone })
+      //  wx.navigateTo({ url: '/pages/userinfo/userinfo?userPhone=' + this.data.userPhone })
     }
   },
   globalData: {
     AV: null,
-    user:null,
-    ztlH : 0,
+    user: null,
+    ztlH: 0,
     userPhone: null,
   }
 })

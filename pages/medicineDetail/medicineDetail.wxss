@@ -5,7 +5,7 @@ page{
 }
 
 swiper{
-  height: 600rpx;
+  height: 480rpx;
   width: 100%;
   z-index: 1;
   position: relative;

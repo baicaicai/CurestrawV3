@@ -111,6 +111,7 @@ page{
 .zx text{
   color: #535e5c;
   font-size: 28rpx;
+  display: block;
   text-align: center;
   padding: 35rpx 0 55rpx 0;
 }

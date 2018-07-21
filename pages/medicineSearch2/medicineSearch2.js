@@ -99,8 +99,18 @@ Page({
     // query.descending('createdAt');
     // query.limit(10)// 返回 10 条数据
     var query = new AV.Query('Products');
-    var cql = "select * from Products where title like '%" + this.data.fSearch2 + "%' or cName like '%" + this.data.fSearch2 + "%' or eName like '%" + this.data.fSearch2 + "%' order by showOrder limit " + this.data.numberCount+",5";
+    var selectStr = this.data.fSearch2;
+    if (selectStr == undefined || selectStr == null)
+    {
+      selectStr='';
+    }
+    var cql = "select * from Products where title like '%" + selectStr + "%' or cName like '%" + selectStr + "%' or eName like '%" + selectStr + "%' order by showOrder limit " + this.data.numberCount+",5";
     console.log("查询记录条数的【cql】：" + cql);
+    wx.showToast({
+      title: '努力加载中',
+      icon: 'loading',
+      duration: 5000
+    });
     AV.Query.doCloudQuery(cql).then(function (data) {
       //console.log(data);
       //var bean = new Page();
@@ -109,16 +119,13 @@ Page({
       //console.log(products);
       if (that.data.numberCount == 0)
       {
+        wx.hideToast();
         that.checkNodata(products);
         that.setData({ products });
       }
       else
       {
-        wx.showToast({
-          title: '努力加载中',
-          icon: 'loading',
-          duration: 2000
-        });
+       
         //追加
         that.data.numberCount += products.length;
         var old_list = that.data.products;
@@ -129,7 +136,11 @@ Page({
           products: that.data.products
         });
         //wx.hideToast();
-      }
+        setTimeout(function () {
+          wx.hideToast();
+        }, 700);
+      };
+    
     }, function (error) {
       console.log(error);
     });

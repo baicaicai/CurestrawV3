@@ -18,8 +18,8 @@ Page({
     duration: 300,
     ztlH: getApp().globalData.ztlH,
     ztlH2: getApp().globalData.ztlH + 44,
-
     objectId: "",
+    fSearch2:"",
     product: {},
     productorther:[]
   },
@@ -29,7 +29,8 @@ Page({
    */
   onLoad: function (options) {
     this.setData({
-      objectId: options.id
+      objectId: options.id,
+      fSearch2: options.selectText
     })
   },
 
@@ -37,17 +38,16 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    var that = this;
-    var query = new AV.Query('Products');
-    query.get(this.data.objectId).then(function (results) {
-      return results.toJSON();
-    }).then(function (results) {
-      that.setData({
-        product: results
-      })
-      //console.log(that.data.product);
-      that.sreachOrher(that, results);
-    });
+    var selectStr = this.data.objectId;
+   
+    if (selectStr != undefined && selectStr != null) {
+      this.myQueryDataById();
+      return;
+    } 
+    selectStr = this.data.fSearch2;
+    if (selectStr != undefined && selectStr != null) {
+      this.myQueryDataByName();
+    }
   },
 
   /**
@@ -102,5 +102,36 @@ Page({
      // console.log(productorther);
     })
       .catch(console.error);
+  },
+  myQueryDataById: function () {
+    var that = this;
+    var query = new AV.Query('Products');
+    query.get(this.data.objectId).then(function (results) {
+      return results.toJSON();
+    }).then(function (results) {
+      that.setData({
+        product: results
+      })
+      //console.log(that.data.product);
+      that.sreachOrher(that, results);
+    });
+  },
+  myQueryDataByName: function () {
+    var that = this;
+    var query = new AV.Query('Products');
+    var selectStr = this.data.fSearch2;
+    if (selectStr == undefined || selectStr == null) {
+      return;
+    }
+    var cql = "select * from Products where title like '%" + selectStr + "%' or cName like '%" + selectStr + "%' or eName like '%" + selectStr + "%' order by showOrder limit 1";
+
+    AV.Query.doCloudQuery(cql).then(function (data) {
+      var products = data.results;
+      //console.log(products[0]);
+      that.setData({ product: products[0].attributes });
+      that.sreachOrher(that, products[0].attributes);
+    }, function (error) {
+      console.log(error);
+    });
   }
 })

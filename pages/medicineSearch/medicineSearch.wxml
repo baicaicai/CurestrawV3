@@ -19,15 +19,13 @@
   <view class='history'>
     <text>常见搜索</text>
     <view class='box'>
-      <navigator class='tip'>胶囊</navigator>
-      <navigator class='tip'>盐酸氟米松软膏</navigator>
-      <navigator class='tip'>Lastre</navigator>
-      <navigator class='tip'>多吉美</navigator>
-      <navigator class='tip'>纳武单抗</navigator>
-      <navigator class='tip'>奥美拉唑胶囊</navigator>
-      <navigator class='tip'>Keytruda</navigator>
-      <navigator class='tip'>氟哌酸</navigator>
-      <navigator class='tip'>四环素</navigator>
+       <navigator class='tip' url="{{item.url}}"  wx:for="{{commonUseProducts}}"> 
+     {{item.name}}
+    </navigator>
+     
+   <!-- <navigator class='tip' url="/pages/medicineSearch2/medicineSearch2?selectText=多吉美">多吉美1</navigator>-->
+       <!--    <navigator class='tip' url="/pages/medicineDetail/medicineDetail?selectText=多吉美">多吉美2</navigator>-->
+             <!--    <navigator class='tip' url="/pages/medicineDetail/medicineDetail?id=5b49781667f3560031a52eba">多吉美3</navigator>-->
     </view>
   </view>
   <view class="{{fnoSeatch ? 'nothing' : 'hide'}}">
